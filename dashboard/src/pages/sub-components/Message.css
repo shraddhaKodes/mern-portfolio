@@ -1,0 +1,145 @@
+/* Main Container */
+.messages-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f4f7f9;
+  padding: 20px;
+}
+
+/* Main Card */
+.main-card {
+  width: 100%;
+  max-width: 600px;
+  background: #f4f7f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+/* Return Button */
+.return-btn {
+  background: #007bff;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.return-btn:hover {
+  background: #0056b3;
+}
+
+/* Messages List */
+.messages-list {
+  margin-top: 15px;
+}
+
+/* Individual Message Card */
+.message-card {
+  background: #ffffff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Message Content */
+.message-content {
+  padding-bottom: 10px;
+}
+
+/* Bold Text */
+.bold-text {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Footer - Delete Button */
+.footer-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Delete Button */
+.delete-btn {
+  background: #dc3545;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background: #b52b37;
+}
+
+/* No Messages Found */
+.no-messages {
+  text-align: center;
+  color: #777;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* ===== RESPONSIVE DESIGN (FOR SCREENS 500px and below) ===== */
+@media (max-width: 500px) {
+  .messages-container {
+    padding: 10px;
+  }
+
+  .main-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .return-btn {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .messages-list {
+    margin-top: 10px;
+  }
+
+  .message-card {
+    padding: 12px;
+    margin-bottom: 10px;
+  }
+
+  .footer-container {
+    justify-content: center;
+  }
+
+  .delete-btn {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .no-messages {
+    font-size: 14px;
+  }
+}

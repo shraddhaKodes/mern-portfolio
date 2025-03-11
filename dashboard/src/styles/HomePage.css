@@ -1,0 +1,152 @@
+/* General container */
+.home-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-right: 1px solid #ddd;
+  padding-top: 20px;
+  position: fixed;
+  left: 0;
+  height: 100%;
+  transition: width 0.3s ease-in-out;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.sidebar-link {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.sidebar-link.active {
+  background: #007bff;
+  color: white;
+}
+
+/* Logout Button */
+.sidebar-bottom {
+  margin-top: auto;
+  padding-bottom: 20px;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  margin-left: 60px; /* Adjust to match sidebar width */
+  transition: margin-left 0.3s ease-in-out;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #0f172a;
+  color: white;
+  border-bottom: 2px solid #334155;
+}
+
+/* Profile Section */
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Dynamic Page */
+.dynamic_page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .sidebar {
+    width: 50px;
+  }
+
+  .main-content {
+    margin-left: 50px;
+    padding: 15px;
+  }
+
+  .profile img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    border-right: none;
+    border-top: 1px solid #ddd;
+    padding-top: 0;
+  }
+
+  .sidebar-nav {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .sidebar-link {
+    width: 35px;
+    height: 35px;
+  }
+
+  .main-content {
+    margin-left: 0;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .profile img {
+    width: 30px;
+    height: 30px;
+  }
+}

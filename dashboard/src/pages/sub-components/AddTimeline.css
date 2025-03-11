@@ -1,0 +1,108 @@
+/* Center the form */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+/* Form container */
+.form-container {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+/* Title */
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Input Wrapper - align labels and inputs in one row */
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* Labels */
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  white-space: nowrap;
+  width: 30%;
+  text-align: left;
+}
+
+/* Input Fields */
+.input-field {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: #007bff;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.submit-btn:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* ===================== Responsive Design ===================== */
+@media (max-width: 480px) {
+  .container {
+    padding: 0.8rem;
+  }
+
+  .form-container {
+    padding: 1.5rem;
+  }
+
+  .input-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .label {
+    width: 100%;
+    text-align: left;
+  }
+
+  .input-field {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+}

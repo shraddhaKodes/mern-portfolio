@@ -1,0 +1,70 @@
+
+/* ViewProject.css */
+.view-project-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.project-box {
+  width: 100%;
+  max-width: 1000px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.project-banner-section {
+  text-align: center;
+}
+
+.project-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.project-banner-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-details-section {
+  margin-top: 20px;
+}
+
+.project-detail-section {
+  margin-bottom: 15px;
+}
+
+.project-detail-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.project-list {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.project-link {
+  color: #af1e2c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}

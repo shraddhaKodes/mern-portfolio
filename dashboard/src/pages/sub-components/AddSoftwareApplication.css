@@ -1,0 +1,113 @@
+/* Container */
+.add-software-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 10px;
+  background-color: #f5f5f5;
+  margin-top: 40px;
+}
+
+/* Form */
+.add-software-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+}
+
+/* Heading */
+.add-software-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Input Fields */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.input-container label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: #007bff;
+}
+
+/* File Upload */
+.file-upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.file-upload-label {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.file-upload-label:hover {
+  background-color: #0056b3;
+}
+
+.file-upload-text {
+  font-size: 12px;
+  color: #777;
+  margin-top: 5px;
+}
+
+/* Preview Image */
+.preview-img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}
+
+.submit-button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
